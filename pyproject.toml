@@ -1,0 +1,26 @@
+[project]
+name = "fls"
+version = "0.1.0"
+description = "FLS: Fire Length Sensor"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["show"]
+
+[dependency-groups]
+dev = [
+    "deptry>=0.23.0",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.8",
+    "mkdocstrings[python]>=0.29.0",
+    "pytest>=8.3.5",
+]
+
+[tool.coverage.report]
+skip_empty = true
+
+[tool.coverage.run]
+branch = true
+source = ["show"]
