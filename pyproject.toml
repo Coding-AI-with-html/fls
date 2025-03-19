@@ -9,6 +9,9 @@ dependencies = []
 [tool.uv.workspace]
 members = ["show"]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
 [dependency-groups]
 dev = [
     "deptry>=0.23.0",

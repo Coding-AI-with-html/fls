@@ -10,7 +10,7 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-show = "show:main"
+show = "show.checker:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -22,5 +22,6 @@ dev = [
     "numpy>=2.2.4",
     "opencv-python>=4.11.0.86",
     "pillow>=11.1.0",
+    "pydantic>=2.10.6",
     "pystray>=0.19.5",
 ]
