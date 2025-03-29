@@ -1,3 +1,4 @@
-from show import checker # Correct import path
+from show import checker  # Correct import path
 
-print(checker.userChecker)
+def test_user_checker():
+    assert checker.userChecker is not None  # Example test

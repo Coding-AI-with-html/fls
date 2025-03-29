@@ -19,6 +19,7 @@ dev = [
     "mkdocs-material>=9.6.8",
     "mkdocstrings[python]>=0.29.0",
     "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
 ]
 
 [tool.coverage.report]
@@ -26,4 +27,4 @@ skip_empty = true
 
 [tool.coverage.run]
 branch = true
-source = ["show"]
+source = ["show/src"]
